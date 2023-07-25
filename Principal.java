@@ -41,7 +41,7 @@ public class Principal{
       //obj 5
       Pincel pincel05	 = new Pincel();
       pincel05.cor	 = "Roxo";
-      pincel05.marca	 = "Pilot";
+      pincel05.marca	 = "Faber-Castell";
       pincel05.carga	 = 13;
       pincel05.tamanho	 = 15;
       pincel05.espessura = 1.8f;
