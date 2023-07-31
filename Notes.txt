@@ -1,0 +1,7 @@
+instalar os pacotes da microsoft no vs code:
+java pack
+debugger
+intellicode
+material icon theme
+omni theme
+
