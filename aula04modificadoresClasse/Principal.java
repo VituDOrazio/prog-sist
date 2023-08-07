@@ -1,25 +1,22 @@
-package aula03vscode;
+package aula04modificadoresClasse;
 
 public class Principal {
   public static void main(String[] args) {
    
-    Pincel pincel01 = new Pincel();
-    TelaCadastroPincel telaCadastroPincel = new TelaCadastroPincel();
-
-    telaCadastroPincel.desenhaTelaCadastroPincel();
+    Pincel pincel01 = new Pincel(); 
     
-    pincel01.cor       = telaCadastroPincel.cor;
-    pincel01.marca     = telaCadastroPincel.marca;
-    pincel01.carga     = telaCadastroPincel.carga;
-    pincel01.tamanho   = telaCadastroPincel.tamanho;
-    pincel01.espessura = telaCadastroPincel.espessura;
+    pincel01.setCor("Verde");
+    pincel01.setMarca("Pilot");
+    pincel01.setCarga(78);
+    pincel01.setTamanho(18); 
+    pincel01.setEspessura(0.9f);
 
-    System.out.println("\nDADOS DO PINCEL\n");
-    System.out.println("Cor.......: " + pincel01.cor);
-    System.out.println("Marca.....: " + pincel01.marca);
-    System.out.println("Carga.....: " + pincel01.carga);
-    System.out.println("Tamanho...: " + pincel01.tamanho);
-    System.out.println("Espessura.: " + pincel01.espessura);
+    System.out.println("\n\nDADOS DO PINCEL\n");
+    System.out.println("Cor.......: " + pincel01.getCor());
+    System.out.println("Marca.....: " + pincel01.getMarca());
+    System.out.println("Carga.....: " + pincel01.getCarga());
+    System.out.println("Tamanho...: " + pincel01.getTamanho());
+    System.out.println("Espessura.: " + pincel01.getEspessura());
 
   }
 }
