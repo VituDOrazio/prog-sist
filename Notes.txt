@@ -1,7 +1,12 @@
-instalar os pacotes da microsoft no vs code:
+# instalar os pacotes da microsoft no vs code:
 java pack
 debugger
 intellicode
 material icon theme
 omni theme
 github push request
+
+# modificadores de acesso
+public      outras classes podem modificar atributos publicos
+private     apenas a classe pode modificar os atributos da mesma
+package     apenas as classes de mesma pasta podem modificar os atributos
