@@ -4,19 +4,17 @@ public class Principal {
   public static void main(String[] args) {
    
     Pincel pincel01 = new Pincel(); 
-    
-    pincel01.setCor("Verde");
-    pincel01.setMarca("Pilot");
-    pincel01.setCarga(78);
-    pincel01.setTamanho(18); 
-    pincel01.setEspessura(0.9f);
+    TelaCadastroPincel telaCadastroPincel = new TelaCadastroPincel();
 
-    System.out.println("\n\nDADOS DO PINCEL\n");
-    System.out.println("Cor.......: " + pincel01.getCor());
-    System.out.println("Marca.....: " + pincel01.getMarca());
-    System.out.println("Carga.....: " + pincel01.getCarga());
-    System.out.println("Tamanho...: " + pincel01.getTamanho());
-    System.out.println("Espessura.: " + pincel01.getEspessura());
+    telaCadastroPincel.desenhaTelaCadastroPincel();
+    
+    pincel01.setCor(telaCadastroPincel.getCor());
+    pincel01.setMarca(telaCadastroPincel.getMarca());
+    pincel01.setCarga(telaCadastroPincel.getCarga());
+    pincel01.setTamanho(telaCadastroPincel.getTamanho()); 
+    pincel01.setEspessura(telaCadastroPincel.getEspessura());
+
+    System.out.println(pincel01.toString());
 
   }
 }
