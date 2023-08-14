@@ -30,5 +30,6 @@ public class TelaCadastroPincel {
         System.out.print("Espessura.: ");
         this.espessura = Float.parseFloat(input.nextLine());
 
+        input.close();
     }
 }
