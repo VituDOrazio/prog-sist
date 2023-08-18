@@ -7,6 +7,7 @@ omni theme
 github push request
 
 # modificadores de acesso
-public      outras classes podem modificar atributos publicos
-private     apenas a classe pode modificar os atributos da mesma
-package     apenas as classes de mesma pasta podem modificar os atributos
+public (+)      outras classes podem modificar atributos publicos
+private (-)     apenas a classe pode modificar os atributos da mesma
+protected (#)   atributo ou método que só pode ser usado por classes que os herdam
+package         apenas as classes de mesma pasta podem modificar os atributos
